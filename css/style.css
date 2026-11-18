@@ -782,9 +782,14 @@ h3 { font-size: var(--font-size-h3); }
   font-size: var(--font-size-xl); cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   z-index: 10;
-  transition: background var(--transition-speed);
+ transition: background var(--transition-speed);
 }
 .lightbox-close:hover { background: var(--black-60); }
+
+.lightbox-close:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
 
 .lightbox-body { padding: var(--spacing-lg); }
 
