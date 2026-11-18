@@ -1,3 +1,4 @@
+
 name: Validate HTML & CSS
 
 on:
@@ -27,5 +28,4 @@ jobs:
         run: htmlhint "*.html" --config .htmlhintrc
 
       - name: Validate CSS files
-     run: stylelint "css/*.css" --config .stylelintrc.json
-
+        run: stylelint "css/*.css" --config .stylelintrc.json
