@@ -24,6 +24,11 @@
         <li><a href="#hobbies" class="nav-link"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"></path></svg><span>Hobbies</span></a></li>
         <li><a href="#footer" class="nav-link nav-cta"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg><span>Contact</span></a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle"
+        aria-label="Switch to light mode"
+        aria-pressed="false">
+  ☀
+</button>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -35,7 +40,7 @@
   <!-- ═══════════════════════════════════════════
        1 · HERO SECTION
   ════════════════════════════════════════════ -->
-  <section id="hero">
+ <section id="hero" aria-labelledby="hero-name">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-particles" aria-hidden="true">
       <span></span><span></span><span></span><span></span>
@@ -44,11 +49,11 @@
     <div class="hero-content">
       <div class="hero-avatar">
         <div class="profile-ring">
-          <img class="profile-photo" src="images/hero/profile_photo.png"
+          <img class="profile-photo" src="images/hero/profile_photo.png" alt="Profile photo of Shanmuga Priya">
      alt="Portrait of Shanmugapriya Palanivel" fetchpriority="high">
         </div>
       </div>
-      <h1 class="hero-name">Shanmugapriya Palanivel</h1>
+     <h1 class="hero-name" id="hero-name">Shanmuga Priya Palanivel</h1>
      <p class="hero-tagline">Driven by curiosity, inspired by innovation, and passionate about turning ideas into meaningful digital experiences.</p>
       <div class="hero-skills" aria-label="Technical skills">
         <span class="skill-badge">Java</span>
@@ -251,7 +256,7 @@
             <div class="family-avatar parent-avatar">
               <img src="images/family/mom.png" alt="Amma">
             </div>
-   
+            <p class="family-label">Amma</p>
           </div>
           <div class="flip-card-back">
             <p>"My first teacher and my greatest strength. Her resilience inspires me every single day."</p>
@@ -266,7 +271,7 @@
             <div class="family-avatar parent-avatar">
               <img src="images/family/dad.png" alt="Appa">
             </div>
-            
+            <p class="family-label">Appa</p>
           </div>
           <div class="flip-card-back">
             <p>"The quiet pillar behind every dream I dare to chase. His support knows no bounds."</p>
@@ -281,7 +286,7 @@
             <div class="family-avatar parent-avatar">
               <img src="images/family/sister.png" alt="My Sister">
             </div>
-           
+          <p class="family-label">Sister</p> 
           </div>
           <div class="flip-card-back">
             <p>"My first critic, my biggest cheerleader, and my lifelong partner in mischief."</p>
