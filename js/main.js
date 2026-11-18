@@ -177,6 +177,21 @@ hobbyCards.forEach(card => {
   });
 });
 
+const themeToggle = document.getElementById('themeToggle');
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark-mode');
+
+    themeToggle.textContent = isDark ? '☀' : '☾';
+    themeToggle.setAttribute(
+      'aria-label',
+      isDark ? 'Switch to light mode' : 'Switch to dark mode'
+    );
+    themeToggle.setAttribute('aria-pressed', String(isDark));
+  });
+}
+
 lightboxClose.addEventListener('click', closeLightbox);
 lightboxBackdrop.addEventListener('click', closeLightbox);
 
