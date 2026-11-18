@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Lighthouse CI
+.lighthouseci/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (only used for CI tooling, not the site itself)
+node_modules/
+package-lock.json
+
