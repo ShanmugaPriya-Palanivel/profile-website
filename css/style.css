@@ -1127,6 +1127,7 @@ section:not(#hero), #footer { color: var(--color-text); }
   .profile-ring { width: min(34vw, 320px); }
   .nav-link { padding: .65rem .55rem; }
 }
+
 @media (max-width: 768px) {
   #navbar { position: absolute; top: 1rem; width: 100%; }
   .nav-container { justify-content: flex-end; }
@@ -1161,12 +1162,20 @@ section:not(#hero), #footer { color: var(--color-text); }
   .hero-sub { grid-column: 1; grid-row: 4; }
   .hero-skills { grid-column: 1; grid-row: 5; justify-content: center; }
   .cta-btn { grid-column: 1; grid-row: 6; justify-self: center; }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
+
 @media (max-width: 380px) {
   .nav-link { font-size: var(--font-size-xxs); padding: .65rem .4rem; }
   .nav-link span { display: none; }
   .nav-links { flex-direction: row; justify-content: space-around; top: var(--nav-height); }
   .nav-link { justify-content: center; }
   .nav-icon { width: 19px; height: 19px; }
-}
 
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
